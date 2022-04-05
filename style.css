@@ -1,0 +1,65 @@
+body {
+    max-height: 100vh;
+
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+}
+
+.left-main {
+    flex: 2;
+    height: 98.7vh;
+    overflow: auto;
+    background-image: url(images/marita-kavelashvili-ugnrXk1129g-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-logo-div {
+    margin-top: 30%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 20px 0;
+}
+
+.left-logo-text {
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    margin: 0 auto;
+}
+
+.left-logo-text-top {
+    font-size: 4rem;
+}
+
+.left-logo-text-bottom {
+    font-size: 1rem;
+}
+
+.left-footer {
+    margin-top: auto;
+    color: white;
+    text-align: center;
+}
+
+.right-main {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right-top,
+.right-middle,
+.right-bottom {
+    flex: 1;
+}
+
+.right-bottom,
+.right-top {
+    background-color: #F5F5F5;
+}
