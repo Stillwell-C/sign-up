@@ -54,11 +54,11 @@
                         <div class="form-row-three">
                             <div class="password-input input-div">
                                 <label for="password">PASSWORD</label>
-                                <input type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Please enter a password with at least 8 characters, including one letter and one number." required>
+                                <input type="password" id="password" name="password" minlength="8" maxlength="30" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please enter at least 8 characters with one uppercase letter, one lowercase letter, and one number." required>
                             </div>
                             <div class="confirm-password-input input-div">
                                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input type="password" name="confirm-password" id="confirm-password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Please enter a password with at least 8 characters, including one letter and one number." required>
+                                <input type="password" name="confirm-password" id="confirm-password" minlength="8" maxlength="30" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please enter at least 8 characters with one uppercase letter, one lowercase letter, and one number."  required>
                             </div>
                         </div>
                     </div>
