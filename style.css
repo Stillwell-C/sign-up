@@ -3,6 +3,11 @@ body {
 
 }
 
+:root {
+    --general-font: Helvetica, Arial, sans-serif;
+    --left-margin: 3rem;
+}
+
 .main-container {
     display: flex;
     align-items: center;
@@ -26,7 +31,7 @@ body {
 }
 
 .left-logo-text {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: var(--general-font);
     color: white;
     margin: 0 auto;
 }
@@ -46,6 +51,7 @@ body {
 }
 
 .right-main {
+    height: 98.7vh;
     flex: 3;
     display: flex;
     flex-direction: column;
@@ -57,9 +63,130 @@ body {
 .right-middle,
 .right-bottom {
     flex: 1;
+    height: 100%;
+    width: 100%;
 }
 
 .right-bottom,
 .right-top {
     background-color: #F5F5F5;
+}
+
+.right-top {
+    font-family: var(--general-font);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.rt-text {
+    margin-left: var(--left-margin);
+}
+
+.top-text {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.top-middle-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.middle-text {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.bottom-text {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.right-middle {
+    font-family: var(--general-font);
+}
+
+.form-header,
+.middle-form {
+    margin-left: var(--left-margin);
+}
+
+.form-header {
+    font-weight: bold;
+}
+
+.middle-form-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    width: min(80%, 500px);
+    margin-bottom: 1rem;
+}
+
+.middle-form input {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 3px;
+}
+
+.middle-form input:focus {
+    border-color: blue;
+}
+
+.middle-form input:valid {
+    border-color: green;
+}
+
+.middle-form label {
+    font-weight: bold;
+}
+
+.form-row-one,
+.form-row-two,
+.form-row-three {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-account-btn {
+    margin-top: 1rem;
+    background-color: #596D4A;
+    border: 1px solid #596D4A;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 8px;
+}
+
+.create-account-btn:hover {
+    color: #596D4A;
+    border: 1px solid #596D4A;
+    background-color: white;
+}
+
+.create-account-btn:active {
+    background-color: #467423;
+    border: 1px solid #467423;
+    color: white;
+}
+
+.create-btn-div,
+.login-div {
+    font-family: var(--general-font);
+    font-weight: bold;
+    margin-left: var(--left-margin);
 }
