@@ -1,12 +1,13 @@
+:root {
+    --general-font: Helvetica, Arial, sans-serif;
+    --left-margin: 3rem;
+}
+
 body {
     max-height: 100vh;
     margin: 0;
     padding: 0;
-}
-
-:root {
-    --general-font: Helvetica, Arial, sans-serif;
-    --left-margin: 3rem;
+    font-family: var(--general-font);
 }
 
 .main-container {
@@ -32,7 +33,6 @@ body {
 }
 
 .left-logo-text {
-    font-family: var(--general-font);
     color: white;
     margin: 0 auto;
 }
@@ -78,7 +78,6 @@ body {
 }
 
 .right-top {
-    font-family: var(--general-font);
     font-weight: bold;
     font-size: calc(1rem + .5vh);
     display: flex;
@@ -116,7 +115,6 @@ body {
 }
 
 .right-middle {
-    font-family: var(--general-font);
     display: flex;
     height: 100%;
     width: 100%;
@@ -214,7 +212,6 @@ body {
 .create-btn-div,
 .login-div,
 .terms-div {
-    font-family: var(--general-font);
     font-weight: bold;
     margin-left: var(--left-margin);
 }
