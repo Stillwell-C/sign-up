@@ -37,7 +37,7 @@ body {
 }
 
 .left-logo-text-top {
-    font-size: 4rem;
+    font-size: calc(4rem + 2vw);
 }
 
 .left-logo-text-bottom {
@@ -62,7 +62,7 @@ body {
 .right-top,
 .right-middle,
 .right-bottom {
-    flex: 1;
+    flex: 1 1 0;
     height: 100%;
     width: 100%;
 }
@@ -75,6 +75,7 @@ body {
 .right-top {
     font-family: var(--general-font);
     font-weight: bold;
+    font-size: calc(1rem + .5vh);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -96,13 +97,13 @@ body {
 
 .middle-text {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     color: gray;
 }
 
 .bottom-text {
-    margin-bottom: 0;
-    margin-top: 10px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .italics {
@@ -111,6 +112,11 @@ body {
 
 .right-middle {
     font-family: var(--general-font);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form-header,
@@ -120,15 +126,21 @@ body {
 
 .form-header {
     font-weight: bold;
+    font-size: calc(1rem + .5vh);
 }
 
 .middle-form-flex {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 40px;
-    width: min(80%, 500px);
+    width: min(100%, 600px);
     margin-bottom: 1rem;
+}
+
+.middle-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: 	#36454f;
 }
 
 .middle-form input {
@@ -136,26 +148,26 @@ body {
     border: 1px solid #D6D9DC;
     border-radius: 3px;
     width: 100%;
-    padding: 3px;
+    padding: 7px;
+    font-size: 14px;
 }
 
 .middle-form input:focus {
-    border-color: blue;
+    outline: none;
+    border: 1px solid blue;
 }
 
 .middle-form input:valid {
-    border-color: green;
+    border: 1px solid green;
+}
+
+.middle-form input:invalid:focus {
+    outline: none;
+    border: 1px solid red;
 }
 
 .middle-form label {
     font-weight: bold;
-}
-
-.form-row-one,
-.form-row-two,
-.form-row-three {
-    display: flex;
-    justify-content: space-between;
 }
 
 .input-div {
@@ -163,13 +175,21 @@ body {
     flex-direction: column;
 }
 
-.create-account-btn {
+.terms-div {
     margin-top: 1rem;
+}
+
+.terms-div label {
+    font-size: 12px;
+}
+
+.create-account-btn {
     background-color: #596D4A;
     border: 1px solid #596D4A;
     color: white;
     padding: 10px 40px;
     border-radius: 8px;
+    margin-bottom: 2rem;
 }
 
 .create-account-btn:hover {
@@ -185,7 +205,8 @@ body {
 }
 
 .create-btn-div,
-.login-div {
+.login-div,
+.terms-div {
     font-family: var(--general-font);
     font-weight: bold;
     margin-left: var(--left-margin);
