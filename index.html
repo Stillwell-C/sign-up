@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Welcome, friend.</title>
+    <title>Welcome, frynd.</title>
 </head>
 <body>
     <div class="main-container">
@@ -31,40 +31,44 @@
                 <p class="form-header">Let's sign up!</p>
                 <form action="" method="get" class="middle-form" id="middle-form">
                     <div class="middle-form-flex">
-                        <div class="form-row-one">
-                            <div class="first-name-input input-div">
-                                <label for="first-name">FIRST NAME</label>
-                                <input type="text" id="first-name" name="first-name" title="Please enter your first name." required>
-                            </div>
-                            <div class="last-name-input input-div">
-                                <label for="last-name">LAST NAME</label>
-                                <input type="text" id="last-name" name="last-name" title="Please enter your last name." required>
-                            </div>
+                        <div class="first-name-input input-div">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="John" title="Please enter your first name." required>
                         </div>
-                        <div class="form-row-two">
-                            <div class="email-input input-div">
-                                <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="email" title="Please enter your email address." required>
-                            </div>
-                            <div class="tel-num-input input-div">
-                                <label for="tel-num">PHONE NUMBER</label>
-                                <input type="number" name="tel-num" id="tel-num" title="Please enter your telephone number." required>
-                            </div>
+                        <div class="last-name-input input-div">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Doe" title="Please enter your last name." required>
                         </div>
-                        <div class="form-row-three">
-                            <div class="password-input input-div">
-                                <label for="password">PASSWORD</label>
-                                <input type="password" id="password" name="password" minlength="8" maxlength="30" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please enter at least 8 characters with one uppercase letter, one lowercase letter, and one number." required>
-                            </div>
-                            <div class="confirm-password-input input-div">
-                                <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input type="password" name="confirm-password" id="confirm-password" minlength="8" maxlength="30" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please enter at least 8 characters with one uppercase letter, one lowercase letter, and one number."  required>
-                            </div>
+                        <div class="email-input input-div">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" placeholder="email@email.com" title="Please enter your email address." required>
+                        </div>
+                        <div class="tel-num-input input-div">
+                            <label for="tel-num">PHONE NUMBER</label>
+                            <input type="tel" name="tel-num" id="tel-num" placeholder="555-555-5555" title="Please enter your telephone number with hyphens." 
+                            pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3,4}[\s.-]\d{4}$" required>
+                        </div>
+                        <div class="password-input input-div">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" minlength="8" maxlength="30" 
+                            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please enter at least 8 characters with one 
+                            uppercase letter, one lowercase letter, and one number." required>
+                        </div>
+                        <div class="confirm-password-input input-div">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-password" minlength="8" 
+                            maxlength="30" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please enter at least 8 characters with 
+                            one uppercase letter, one lowercase letter, and one number."  required>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="right-bottom">
+                <div class="terms-div">
+                    <label for="terms" class="terms">
+                    <input type="checkbox" id="terms" name="terms" form="middle-form" class="terms" value="agree-to-terms" title="You must agree to the terms and conditions to proceed." required>Agree to <a href="#">Terms and Conditions</a>
+                    </label>
+                </div>
                 <div class="create-btn-div">
                     <button type="submit" class="create-account-btn" form="middle-form">Create Account</button>
                 </div>
