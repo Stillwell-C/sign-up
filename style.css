@@ -1,6 +1,7 @@
 body {
     max-height: 100vh;
-
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -15,7 +16,7 @@ body {
 
 .left-main {
     flex: 2;
-    height: 98.7vh;
+    height: 100vh;
     overflow: auto;
     background-image: url(images/marita-kavelashvili-ugnrXk1129g-unsplash.jpg);
     background-size: cover;
@@ -51,7 +52,7 @@ body {
 }
 
 .right-main {
-    height: 98.7vh;
+    height: 100vh;
     flex: 3;
     display: flex;
     flex-direction: column;
@@ -147,7 +148,7 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
-    width: 100%;
+    width: min(100%, 200px);
     padding: 7px;
     font-size: 14px;
 }
