@@ -51,6 +51,10 @@ body {
     text-align: center;
 }
 
+.left-footer a {
+    color: white;
+}
+
 .right-main {
     height: 100vh;
     flex: 3;
